@@ -40,7 +40,8 @@ $.init = function() {
 	};
 
 	$.mute = $.storage['mute'];
-	$.autofire = $.storage['autofire'];
+	// $.autofire = $.storage['autofire'];
+	$.autofire = true;
 	$.slowEnemyDivider = 3;	
 
 	$.keys = {
@@ -680,20 +681,22 @@ Events
 ==============================================================================*/
 $.mousemovecb = function( e ) {
 	e.preventDefault();
-	$.mouse.ax = e.pageX;
-	$.mouse.ay = e.pageY;
-	$.mousescreen();
+	// $.mouse.ax = e.pageX;
+	// $.mouse.ay = e.pageY;
+	// console.log($.mouse.ax)
+	// console.log($.mouse.ay)
+	// $.mousescreen();
 };
 
 $.mousescreen = function() {
-	$.mouse.sx = $.mouse.ax - $.cOffset.left;
-	$.mouse.sy = $.mouse.ay - $.cOffset.top;
-	$.mouse.x = $.mouse.sx - $.screen.x;
-	$.mouse.y = $.mouse.sy - $.screen.y;
+	// $.mouse.sx = $.mouse.ax - $.cOffset.left;
+	// $.mouse.sy = $.mouse.ay - $.cOffset.top;
+	// $.mouse.x = $.mouse.sx - $.screen.x;
+	// $.mouse.y = $.mouse.sy - $.screen.y;
 };
 
 $.mousedowncb = function( e ) {
-	e.preventDefault();
+	e?.preventDefault();
 	$.mouse.down = 1;
 };
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <svg v-else width="100%" height="100vh">
+            
+            <g id="leftGamepad" style="transform:translate(25%, 50%)">
+                <circle id="outerCircleLeftGamepad" r="20%" stroke="red"  />
+                <circle id="innerCircleLeftGamepad" r="10%" fill="red" />
+            </g>
+            
+            <g id="rightGamepad" style="transform:translate(75%, 50%)">
+                <circle id="outerCircleRightGamepad" r="20%" stroke="red"  />
+                <circle id="innerCircleRightGamepad" r="10%" fill="red" />
+            </g>
+            <rect id="leftRect" fill="transparent" x="0" y="0" width="50%" height="100vh" />
+            <rect id="rightRect" fill="transparent" x="50%" y="0" width="50%" height="100vh" />
+
+        </svg>
+        <!-- <button id="shootButton">Shoot</button> -->
+
+        <style>
+            body{
+                overflow: hidden;
+            }
+        </style>
+
+        <script src="../js/socketio.js"></script>
+        <script src="../js/networking.js"></script>
+        <script src="gamepad.js"></script>
+
+
+    </body>
+</html>
